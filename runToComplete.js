@@ -1,3 +1,5 @@
+// Run to completion
+// fn takes more than 15ms to run, setTimeout cannot interrupt a function call.
 setTimeout(function() {
     console.log('registered first');
 }, 15);
