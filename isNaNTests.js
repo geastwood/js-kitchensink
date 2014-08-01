@@ -1,0 +1,14 @@
+console.log('NaN is not a number', isNaN(NaN));
+console.log('{} is not a number', isNaN({}));
+console.log('[] is not a number', isNaN([]));
+console.log('"some string" is not a number', isNaN("some string"));
+console.log('RegExp is not a number', isNaN(/reg/));
+console.log('function is not a number', isNaN(function(){}));
+console.log('37 is not a number', isNaN(37));
+console.log('"37" is not a number', isNaN("37"));
+console.log('"37.37" is not a number', isNaN("37.37"));
+console.log('"1e19" is not a number', isNaN("1e19"));
+console.log('"" is not a number', isNaN(""));
+console.log('" " is not a number', isNaN(" "));
+console.log('undefined is not a number', isNaN(void 0));
+console.log('null is not a number', isNaN(null));

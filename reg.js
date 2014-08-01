@@ -1,0 +1,13 @@
+var s = '99999-9999';
+var literal = /^\d{5}-\d{4}$/;
+//console.log('literal test', literal.test(s));
+var constructor = new RegExp('^\\d{5}-\\d{4}$');
+//console.log('constructor test', constructor.test(s));
+var st = 'tttesttt';
+var r = /((t{1,}?)es(t{1,}?))/;
+console.log(r.exec(st));
+console.log('two regex are the same', /test/ === new RegExp('test'));
+console.log('literal representation', /test/);
+console.log('constructor representation', new RegExp('test'));
+var tmpr = new RegExp('(^|\\s)' + 'fei' + '(\\s|$)');
+console.log(tmpr, 'match "fei"', tmpr.test('fei'));
