@@ -4,9 +4,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         jasmine: {
             isNumber: {
-                src: ['src/isNumber.js'],
+                src: ['src/isNumber.js', 'src/array/*.js'],
                 options: {
-                    specs: ['test/isNumber.spec.js']
+                    specs: 'test/*.js'
                 }
             }
         },
